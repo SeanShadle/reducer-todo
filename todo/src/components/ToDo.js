@@ -28,8 +28,7 @@ return(
             value={newToDo}
             onChange={handleChanges}
         />
-        <button onClick={() => dispatch({type: "ADD_ITEM", payload: newToDo })}>Add Item</button>
-        <button onClick={() => dispatch({type: "REMOVE_ITEM", payload: state})}>Clear Completed</button>
+        <button className="add"onClick={() => dispatch({type: "ADD_ITEM", payload: newToDo })}>Add Item</button>
     </div>
     </form>
     <ul>
@@ -43,6 +42,7 @@ return(
             </li>
         ))}
     </ul>
+    <button className="remove"onClick={() => dispatch({type: "REMOVE_ITEM", payload: state})}>Clear Completed</button>
     </div>
 )
 }

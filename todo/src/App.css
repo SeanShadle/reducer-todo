@@ -1,3 +1,30 @@
+*{
+  background-color:darkgray
+}
+
+input{
+  background-color: white;
+  padding: 10px;
+}
+
+button{
+  border-radius: 7px;
+  padding: 10px;
+}
+
+.add{
+  background-color: lightgreen;
+}
+
+.remove{
+  background-color: red;
+  
+}
+
+li{
+  margin-top: 25px,
+}
+
 .App {
   text-align: center;
 }
@@ -31,8 +58,6 @@ ul{
 .App-link {
   color: #61dafb;
 }
-
-
 
 .completed{
   text-decoration: line-through;
