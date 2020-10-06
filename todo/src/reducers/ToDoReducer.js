@@ -14,16 +14,17 @@ export const reducer = (state, action) => {
                 ...state,
                 {
                 item: action.payload,
-                completed: false
+                completed: false,
+                id: Date.now()
                 },
             ];
-        case "TOGGLE_COMPLETED":
+        case "TOGGLE_ITEM":
             return state.map(todo => {
                 return todo.id === action.id
                 ? {...todo, completed: !todo.completed}
                 : todo;
             });
-        case "REMOVE_TODO":
+        case "REMOVE_ITEM":
             return state.filter(todo => !todo.completed);
         default:
             return state;
